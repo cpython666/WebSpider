@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/index.css" rel="stylesheet">
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">-->
+  </head>
+  <body>
+    <header>
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">全站爬虫管理系统</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="index" href="#">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="config" href="#">爬虫配置</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="manage" href="#">数据管理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="log" href="#">日志查看</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="index_">
+            <div class="container mt-3">
+                <div class="container text-center">
+                  <div class="row  shadow-lg p-3 bg-body-tertiary rounded">
+                    <div class="col">
+                        <div class="col text-center font h1" id="pagecount">---</div>
+                        <div class="col text-center">收录页面总量</div>
+                    </div>
+                    <div class="col">
+                        <div class="col text-center font h1" id="linkcount">---</div>
+                        <div class="col text-center">连接队列总数</div>
+                    </div>
+                    <div class="col">
+                        <div class="col text-center font h1" id="scuessrate">--%</div>
+                        <div class="col text-center">成功率</div>
+                    </div>
+                                          <div class="col">
+                        <div class="col text-center font h1">1</div>
+                        <div class="col text-center">后台任务数</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                                    <div class="daily-count-chart" style="width: 800px;height: 500px"></div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section id="config_" style="display: none;">
+            <div class="container mt-5">
+                <h1>欢迎使用全站爬虫管理系统</h1>
+                <p>这是一个配置页面，您可以在这里展示主要内容。</p>
+            </div>
+        </section>
+
+        <section id="manage_" style="display: none;">
+            <div class="container mt-5">
+                <h1>欢迎使用全站爬虫管理系统</h1>
+                <p>这是一个管理页面，您可以在这里展示主要内容。</p>
+            </div>
+        </section>
+
+        <section id="log_" style="display: none;">
+            <div class="container mt-5">
+                <h1>欢迎使用全站爬虫管理系统</h1>
+                <p>这是一个日志页面，您可以在这里展示主要内容。</p>
+            </div>
+        </section>
+
+
+    </main>
+  </body>
+
+  <script src="../static/js/echarts.min.js"></script>
+  <script src="../static/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/js/jquery.min.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>-->
+<!--  <script src="https://cdn.staticfile.org/jquery/3.7.0/jquery.min.js"></script>-->
+  <script src="../static/js/index.js"></script>
+
+</html>

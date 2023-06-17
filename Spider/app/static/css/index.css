@@ -1,0 +1,13 @@
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+
+.font{
+  color: #1f7ae4;
+  font-family:"electronicFont";
+}
+*{
+  margin: 0;
+  padding: 0;
+}

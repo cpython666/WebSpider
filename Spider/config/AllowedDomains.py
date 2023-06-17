@@ -5,8 +5,15 @@ class AllowedDomains(Enum):
     baidu = ('baidu.com',None,)
     bing = ('baidu.com',None)
     # 新闻类
+    # 新浪 虎嗅 凤凰网 网易新闻,人民网，搜狐网
     xinlang=('sina.com.cn',None)
     huxiu=('huxiu.com',None)
+    fenghuang=('news.ifeng.com',None)
+    wangyi=('news.163.com',None)
+    people=('people.com.cn',None)
+    souhu=('news.sohu.com',None)
+    pengpai=('thepaper.cn',None)
+
     # 百科类
     baidubaike = ('baike.baidu.com',None)
     sougoubaike = ('baike.sogou.com',None)

@@ -1,7 +1,4 @@
 from mongoengine import connect
-from Spider.models.Links import Link
-from Spider.models.Pages import Page
-from Spider.models.utils import *
 connect(db='Spider',
         # username='root',
         # password='1234',
@@ -9,3 +6,7 @@ connect(db='Spider',
         port=27017,
         # authSource='root'
         )
+
+from Spider.models.Links import Link
+from Spider.models.Pages import Page
+from Spider.models.utils import *

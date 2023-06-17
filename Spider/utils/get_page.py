@@ -11,4 +11,5 @@ def get_page(url):
         raise Exception(f"请求失败{r.text}")
 
 if __name__=="__main__":
-    get_page('http://www.cs.com.cn/')
+    # get_page('http://www.cs.com.cn/')
+    print(get_page('https://news.163.com/'))

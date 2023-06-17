@@ -19,7 +19,7 @@ def extract_links_from_url_and_html(url,page):
     links = []
     for link in soup.find_all('a'):
         href = link.get('href')
-        if href and href!='javascript:;':
+        if href and href!='javascript:;' and not href.endswith('.jpg') and not href.endswith('.png'):
             parsed_url = urlparse(href)
             if parsed_url.scheme == '' and parsed_url.netloc == '':
                 # 相对链接，拼接成绝对链接
