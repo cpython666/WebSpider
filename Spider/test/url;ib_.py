@@ -1,6 +1,7 @@
 from urllib.parse import urlparse
 
-url = 'https://example.com:8080/path/to/page?param=value#fragment'
+# url = 'https://example.com:8080/path/to/page?param=value#fragment'
+url = 'https://www.example.com:8080/path/to/page?param=value#fragment https://www.example.com:8080/path/to/page?param=value#fragment'
 result = urlparse(url)
 
 print(result.scheme)

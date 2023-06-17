@@ -2,7 +2,7 @@ from enum import Enum
 
 class AllowedDomains(Enum):
     # 搜索引擎
-    baidu = ('baidu.com',None,)
+    baidu = ('baidu.com',None)
     bing = ('baidu.com',None)
     # 新闻类
     # 新浪 虎嗅 凤凰网 网易新闻,人民网，搜狐网
@@ -39,3 +39,4 @@ class AllowedDomains(Enum):
 
 if __name__ == '__main__':
     print(AllowedDomains.found_parser_by_domain('baidu.com'))
+    print(AllowedDomains.found_parser_by_domain('baidu.com').parser)

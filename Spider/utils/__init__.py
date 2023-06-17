@@ -1,8 +1,8 @@
 from Spider.utils.extract_links import extract_links_from_url_and_html
 from Spider.utils.write_page import write_page
-from Spider.utils.get_headers import get_headers
 
-from Spider.utils.get_page import get_page
+from Spider.utils.spider_utils import get_headers,get_netloc,get_page
+
 from Spider.config import *
 
 from time import sleep
