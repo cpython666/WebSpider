@@ -9,23 +9,27 @@ UserAgents = [
 def get_headers():
     return {"user-agent": choice(UserAgents)}
 
-from urllib.parse import urlparse
-
-def get_netloc(url):
-    return urlparse(url).netloc
-
 from Spider.config import *
 from Spider.utils import *
+
 import chardet
 import requests
 def get_page(url):
-    r=requests.get(url,headers=get_headers(),timeout=TIMEOUT)
+    r=requests.get(url,headers=get_headers())
     if r.status_code == 200:
-        r = r.content.decode(chardet.detect(r.content)["encoding"])
-        return r
+        try:
+            encoding=chardet.detect(r.content)["encoding"]
+            if encoding.lower() == "gb2312":
+                html= r.content.decode('gb18030')
+            else:
+                html= r.content.decode(encoding)
+        except:
+            html= r.text
+        return remove_css(html)
     else:
         raise Exception(f"请求失败{r.text}")
 
 if __name__=="__main__":
     # get_page('http://www.cs.com.cn/')
-    print(get_page('https://news.163.com/'))
+    # print(get_page('https://news.163.com/'))
+    print(get_page('https://www.huxiu.com/'))

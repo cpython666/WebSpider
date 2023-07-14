@@ -1,0 +1,9 @@
+fastapi
+selenium
+requests
+bs4
+fastapi
+uvicorn
+pymongo
+mongoengine
+chardet

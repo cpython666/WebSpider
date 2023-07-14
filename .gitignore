@@ -1,2 +1,5 @@
 .idea/
 __pycache__/
+test/
+Spider源代码.zip
+Spider/logs/WebSearch*
