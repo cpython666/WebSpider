@@ -26,7 +26,7 @@ utils：一些工具函数，包含：
 run_huxiu使用requests请求新闻页面，可以请求到新闻信息，但会导致动态加载的比如相关新闻推荐不能爬到，因此程序在链接表的链接都被访问后，程序便会停滞，
 run_huxiu_add是使用selenium请求页面，所以可以请求到相关新闻推荐，但一个程序运行五十分钟左右会出现访问不到网站的情况
 run_huxiu_error是对错误请求再次使用selenium请求
-run_huxiu_person是根据用户id请求到文章链接存储数据库的函数
+run_huxiu_person是根据用户id请求到文章链接存储数据库的函数,需要使用huxiu_id.txt文件，需要去重
 其他站点同理
 ## 主流程说明：
 从链接数据库取出一个未访问链接，访问获取页面源代码（根据add是否决定是requests还是selenium），
